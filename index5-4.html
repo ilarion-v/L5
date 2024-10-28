@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+let N = prompt("Введіть ціле число:");
+let isPrime = true;
+
+for (let i = 2; i < N; i++) {
+    if (N % i === 0) {
+        isPrime = false;
+        break;
+    }
+}
+
+if (N <= 1) isPrime = false;
+
+console.log(N + (isPrime ? " - просте число" : " - не є простим числом"));
+</script>
+</body>
+</html>
